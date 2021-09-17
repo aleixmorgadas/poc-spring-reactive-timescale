@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/poc-spring-reactive-timescale
+    username: postgres
+    password: root
