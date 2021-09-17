@@ -19,6 +19,7 @@ repositories {
 extra["testcontainersVersion"] = "1.16.0"
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-data-rest")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-jooq")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")

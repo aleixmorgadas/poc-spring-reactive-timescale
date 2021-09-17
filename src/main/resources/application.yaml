@@ -3,3 +3,6 @@ spring:
     url: ${JDBC_URL}
     username: ${DATABASE_USER}
     password: ${DATABASE_PASSWORD}
+  data:
+    rest:
+      base-path: /api
