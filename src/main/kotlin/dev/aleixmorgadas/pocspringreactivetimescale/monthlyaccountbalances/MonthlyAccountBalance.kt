@@ -7,16 +7,19 @@ import javax.persistence.Entity
 import javax.persistence.Id
 import javax.persistence.IdClass
 
-class AccountBalanceId(
+class MonthlyAccountBalanceID(
+    val bucket: String = "",
     val accountId: UUID = UUID.randomUUID(),
     val name: String = "",
     val asset: String = "",
 ): Serializable
 
 @Entity
-@IdClass(AccountBalanceId::class)
+@IdClass(MonthlyAccountBalanceID::class)
 @Immutable
-class AccountBalance(
+class MonthlyAccountBalance(
+    @Id
+    val bucket: String,
     @Id
     val accountId: UUID,
     @Id

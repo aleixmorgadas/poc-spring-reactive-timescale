@@ -1,7 +1,6 @@
-package dev.aleixmorgadas.pocspringreactivetimescale.accountbalances
+package dev.aleixmorgadas.pocspringreactivetimescale.monthlyaccountbalances
 
 import org.springframework.data.repository.CrudRepository
-import org.springframework.data.repository.Repository
 import java.util.*
 
 interface AccountBalanceRepository: CrudRepository<AccountBalance, AccountBalanceId> {

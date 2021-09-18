@@ -1,0 +1,35 @@
+###
+GET http://localhost:8080/api/
+Accept: application/json
+
+###
+GET http://localhost:8080/api/transactions
+Accept: application/json
+
+###
+POST http://localhost:8080/api/transactions
+Content-Type: application/json
+
+{
+  "id": "{{$uuid}}",
+  "time": "2021-08-14T22:08:50.089Z",
+  "name": "John Doe",
+  "accountId": "A05E5EA4-972B-4A73-8255-1DB94118E6C2",
+  "asset": "EURO",
+  "value": 45,
+  "concept": "Bizum BirthDay"
+}
+
+###
+GET http://localhost:8080/api/transactions
+Accept: application/json
+
+
+###
+GET http://localhost:8080/api/accountBalances
+Accept: application/json
+
+###
+GET http://localhost:8080/api/monthlyAccountBalances
+Accept: application/json
+
